@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:id="@+id/linearLayout1"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="#000000" 
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/contact_profile_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="top"
+            android:text="Name"
+            android:textColor="#e6e6e6"
+            android:textSize="28dp" android:layout_marginBottom="7dp"/>
+
+        <ImageView
+            android:id="@+id/contact_profile_avatar"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@+id/contact_profile_name"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/usericon" />
+
+        <Button
+            android:id="@+id/contact_profile_sendMessageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/contact_profile_avatar"
+            android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:id="@+id/contact_profile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/contact_profile_sendMessageButton"
+            android:textColor="#333333"
+            android:textSize="12dp" android:layout_marginBottom="15dp"/>
+
+    </RelativeLayout>

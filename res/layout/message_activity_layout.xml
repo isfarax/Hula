@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/contact_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000"
+        android:clickable="true" android:baselineAligned="true">
+        
+	   	<ImageView
+	        android:id="@+id/contact_avatar"
+	        android:layout_width="32dp"
+	        android:layout_height="32dp"
+	        android:layout_gravity="left"
+	        
+	        android:adjustViewBounds="true"
+	        android:scaleType="centerCrop"
+	        android:src="@drawable/usericon" />
+    
+	    <LinearLayout
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="3dp"
+	        android:layout_weight="0.9"
+	        android:baselineAligned="true"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/contact_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" 
+	            android:textSize="14dp" android:textColor="#ffffff" 
+	            android:text="Farax Sample"/>
+	
+	        <TextView
+	            android:id="@+id/contact_status"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textSize="10dp" android:textColor="#ffffff"
+	            android:text="Farax Status!" />
+	        
+	    </LinearLayout>
+        
+
+    </LinearLayout>
+		
+    <ListView
+        android:id="@+id/listMsgs"
+        android:layout_width="match_parent"
+        android:layout_height="402dp"
+        android:layout_weight="0.9" >
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:orientation="horizontal" android:layout_weight="0.1" android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9" android:layout_width="fill_parent">
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send" />
+
+    </LinearLayout>
+
+</LinearLayout>

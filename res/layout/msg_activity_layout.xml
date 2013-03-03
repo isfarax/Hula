@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/msg_activity_rlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/msg_activity_contact_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/usericon" android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/msg_activity_contact_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/msg_activity_contact_avatar"
+            android:layout_toRightOf="@+id/msg_activity_contact_avatar"
+            android:text="Medium Text"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/msg_activity_contact_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/msg_activity_contact_name"
+            android:layout_toRightOf="@+id/msg_activity_contact_avatar"
+            android:text="Small Text"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="1px" android:background="#ffffff"/>
+
+    <ListView
+        android:id="@+id/msg_activity_msgs_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1" >
+    </ListView>
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+ 		
+	    <EditText
+		    android:id="@+id/msg_activity_msg_input"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:layout_height="wrap_content" > 
+		</EditText>
+
+	    <Button
+	        android:id="@+id/msg_activity_send_msg"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Send" />
+
+	</LinearLayout>
+
+	
+
+</LinearLayout>

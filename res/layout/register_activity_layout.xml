@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/register_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="username">
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/register_p1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="password"/>
+
+    <EditText
+        android:id="@+id/register_p2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:hint="repeat password"/>
+
+    <Button
+        android:id="@+id/register_new_user_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account" />
+
+</LinearLayout>
